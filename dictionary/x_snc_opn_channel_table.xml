@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Opn Channel Table" max_length="40" name="x_snc_opn_channel_table" sizeclass="4" type="collection">
+        <element label="Requested due by" max_length="40" name="requested_due_by" read_only="true" type="due_date"/>
+        <element default="javascript:gs.getUserID()" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Requestor" max_length="32" name="requestor" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+    </element>
+</database>
